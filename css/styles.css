@@ -1,0 +1,161 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #61122f;
+}
+
+/** HEADER **/
+header{
+	height:40px;
+	padding : 10px 10px;
+	background-color: #363636;
+}
+#header_content{
+	font-family: 'Comic Neue', cursive;
+	text-align: center;
+	font-style: none;
+	color:white;
+}
+/** HEADER END **/
+
+/** MAIN CONTENT **/
+
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+  margin-top: 30px;
+  padding: 0;
+}
+.jumbotron{
+	margin-bottom: 30px;
+}
+
+
+/* LARGE DEVICES */
+@media(min-width: 1200px){
+	.container .jumbotron{
+		background :url("../img/pic_1200.jpg") no-repeat;
+		height: 675px;
+	}
+	#row_content{
+		margin-top:90px;
+	}
+}
+
+/* MEDIUM DEVICES */
+@media(min-width:992px ) and (max-width: 1199px)
+{
+	.container .jumbotron{
+		background :url("../img/pic_992.jpg") no-repeat;
+		height: 558px;
+	}
+	#row_content{
+		margin-top:90px;
+	}
+
+}
+
+/* SMALL DEVICES */
+@media(min-width:768px) and (max-width: 991px)
+{
+	.container .jumbotron{
+		background :url('../img/pic_768.jpg') no-repeat;
+		height: 432px;
+	}
+	#row_content{
+		margin-top:60px;
+	}
+}
+
+/* EXTRA SMALL DEVICES */
+@media(max-width: 767px)
+{
+	/*.container .jumbotron{
+		background :url('../img/pic_310.jpg') no-repeat;
+		height: 320px;
+	}*/
+
+}
+@media(max-width:390px)
+{
+	#text{
+		padding:70px;
+	}
+
+}
+/* HOME CONTENT */
+#venue, #maps{
+	height:250px;
+	width:100%;
+	position: relative;
+	margin-bottom: 30px;
+	border: 2px solid #3F0C1F;
+  	overflow: hidden;
+}
+#maps:hover, #venue:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#venue{
+	background: url("../img/wedding1.jpg") no-repeat;
+	background-position: center;
+	width: 100%;
+}
+#venue span, #maps span{
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 100%;
+	text-align: center;
+	font-size:1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+  	color: #fff;
+  	opacity: .8;
+}
+span:hover{
+	text-decoration: none;
+}
+
+/* NEXT PAGE */
+.container{
+	position: relative;
+}
+.invite{
+	width: 80%;
+	height: 100%;
+	/*position:relative;*/
+	background: #d9d9d9;
+	box-shadow: 0 0 50px #3F0C1F;
+  	/*border: 2px solid #3F0C1F;*/
+  	margin: 30px auto;
+}
+#top_thing{
+	text-align: center;
+	text-transform: uppercase;
+  	position:relative;
+  	top: 0;
+
+}
+#top_thing span{
+	position:absolute;
+	top: 0;
+	left: 0;
+	font-size: 1.1em;
+	width: 100%;
+	padding:15px 25px;
+	background-color: #363636;
+  	color: #fff;
+}
+#invite_content{
+}
+#text{
+	font-family: 'Libre Baskerville', serif;
+	padding-top:100px;
+	padding-left: 0;
+	padding-right: 0;
+	margin:20px 40px;
+	padding-bottom: 30px;
+	color: black;
+}
